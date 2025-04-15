@@ -1,7 +1,6 @@
 // tests/auth.test.js
 const request = require('supertest');
 const app = require('../src/app');  // Ensure this path is correct
-const sequelize = require('../src/config/db'); // Import your database connection
 
 describe('POST /api/auth/register', () => {
   it('should register a new website/app and return an API key', async () => {
